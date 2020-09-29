@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hip Hop</title>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="main.css">
+	<script >
+		
+
+function showFunc() {
+	
+
+	var arrayOfTopics=["music1","music2"];
+	var objectOfTopics={
+
+	
+	music1:"hip hop",
+	music2:"jazz",
+	
+}
+$("#show").click(function(){
+
+	document.getElementById('shownow').innerHTML = "there is more than "+objectOfTopics.music1+"   "+"which is"+" "+objectOfTopics["music2"];
+
+
+$("#firstpara").show();
+$("#show1").show();
+$("#aboutshow").show();
+})
+
+}
+$(document).ready(function(){
+
+$("#show1").hide();
+$("#firstpara").hide();
+$("#aboutshow").hide();
+    $("#pilates").css({"font-size": "170px","text-shadow": "2px 2px 5px #ffd194","text-align":"left","font-family": "serif","color": "Dark yellow4"});
+    $("#hiphop").css({"width":"750px"});
+    $("#rap").css({"width":"750px","height":"500px"});
+    $("#shownow").css({"color":"#ffffff","font-size":"35px"});
+    $("#show1").css({"padding":"20px","border-radius":"15px","background-color":"#b993d6","width":"190","font-size":"20px"});
+    $("#aboutshow,#aboutshow2").css({"font-size":"45px"});
+    $("#Happy1,#Happy2").css({"color":"#d53369"});
+    $("#show2").css({"font-size":"20px"});
+    $("#show,#show3").css({"background-color":"#a83279","font-size":"20px"});
+  
+   
+    
+});
+
+
+function show1Func(){
+	
+window.open("jazz.html");
+
+}
+
+
+function show2Func(){
+
+	document.location.href = 'https://www.youtube.com/user/Chillhopdotcom/videos';
+}
+
+
+function show3Func(){
+
+	document.location.href='https://www.youtube.com/user/allrapnation/videos';
+}
+</script>
+</head>
+<body>
+<div class="pilatesfirst">
+<h1 id="pilates">Hip Hop</h1>
+<p id="quote" style="font-size: 30px">“Life is too short to live the same day twice. So each new day make sure you live your life.” – Machine Gun Kelly</p>
+<hr>
+</div>
+<div>
+<center><img id="hiphop" src="./src/hiphop.png"></center>
+</div>	
+<hr>
+
+
+<div>
+	<center><button id="show" onclick="showFunc()">show me more</button></center>
+</div>
+<div id="showhere1">
+	<center><h1 id="firstpara">Chillhop Music</h1></center>
+	<center><p id="aboutshow">About Youtuber Welcome to<span id="Happy1"> Chillhop</span>, a breeding ground for the best and newest in Jazzy and Lofi Hip Hop. We strive to develop and renew the sound to be able keep you all entertained and chilled. 
+	Frequency 1 video / week
+	Since Jan 2013</p></center>
+	<center><button id="show2" onclick="show2Func()">go to Chillhop Music</center>
+	<center><p id="shownow"></p></center>
+		
+	
+	<center><button id="show1" onclick="show1Func()">click me && go there</button></center>
+</div>
+<hr>
+<div>
+<center><img id="rap" src="./src/rap.png"></center>
+</div>	
+<hr>
+
+
+
+<div id="showhere2">
+	<center><h1 id="firstpara">Rap Nation</h1></center>
+	<center><p id="aboutshow2">About Youtuber Welcome to<span id="Happy2"> Rap Nation</span>, a About Youtuber Discover the best Rap/Hip-Hop music.
+	Frequency 1 video / day
+	Since Jul 2014
+	</p></center>
+	<center><button id="show3" onclick="show3Func()">go to Rap Nation</center>
+	<center><p id="shownow2"></p></center>
+		
+	
+	
+</div>
+<hr>
+
+<script type="main.js"></script>
+</body>
+</html>

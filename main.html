@@ -1,0 +1,154 @@
+<html>
+
+<head>
+<title>Welcome!</title>	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="main.css">
+
+<script>
+$(document).ready(function(){
+  $("#firstbutton").click(function(){
+    $(".forth").slideToggle();
+
+  });
+});
+$(document).ready(function(){
+  $("#other1").click(function(){
+    $(".forth").slideUp();
+
+  });
+});
+$(document).ready(function(){
+  $("#other2").click(function(){
+    $(".secondphoto").slideUp();
+
+  });
+});
+// $(document).ready(function(){
+//   $("#other3").click(function(){
+//     $(".thirdphoto").slideToggle();
+
+//   });
+// });
+
+function myFunction() {
+	window.open("pilates.html")
+
+	var arrayOfTopics=["sport1","sport2","music1","music2","dance1","dance2"];
+	var objectOfTopics={
+
+	sport1:"yoga",
+	sport2:"pilates",
+	music1:"hip hop",
+	music2:"jazz",
+	dance1:"flamingo",
+	dance2:"zomba"
+}
+  document.getElementById("para").innerHTML = objectOfTopics.sport1;
+  
+
+}
+
+function hipFunc(){
+
+
+	var arrayOfTopics=["sport1","sport2","music1","music2","dance1","dance2"];
+	var objectOfTopics={
+
+	sport1:"yoga",
+	sport2:"pilates",
+	music1:"hip hop",
+	music2:"jazz",
+	dance1:"flamingo",
+	dance2:"zomba"
+}
+  //document.getElementById("para2").innerHTML = objectOfTopics.sport2;
+  
+  $(document).ready(function(){
+alert("Hello and welcome to our website ! you are amazing");
+
+
+
+})
+  window.open("hip.html");
+}
+
+function JazzFunc(){
+
+	window.open("jazz.html");
+}
+
+
+
+</script>
+</head>
+
+<body>
+
+
+<div class="first">
+	
+<h1 id="learn">Learn && stay safe &#128512;</h1>
+
+</div>
+
+<div id="second">
+	
+<p id="Discover">Discover what you want to learn</p>
+
+<img id="firstimage" src="./src/learn.jpg">
+<button id="firstbutton">Discover</button>
+
+
+
+<div>
+	
+</div>
+<hr>
+<br>
+<div class="forth">
+<img id="images" src="./src/music.jpg">
+<button id="music1" onclick="JazzFunc()">Jazz </button>
+<button id="other1">More choice </button>
+</div>
+<hr>
+<div class="secondphoto">
+<img   id="images" src="./src/dance.jpg">
+<button id="dance" onclick="hipFunc()">Hip Hop </button>
+<button id="other2">More choice </button>
+
+</div>
+<hr>
+<div class="thirdphoto">
+<img id="images" src="./src/sport.jpg">
+<p id="para" ></p>
+<div class="sport">
+<button id="sport" onclick="myFunction()">Sport </button>
+</div>
+<div class="other3">
+
+
+</div>
+</div>
+
+<footer>
+<div class="third">
+<p id="mine">created by Yosr Safta with &#128151;</p>
+</div>
+
+</footer>
+
+</div>
+
+
+
+
+<script type="main.js"></script>
+
+
+</body>	
+
+
+
+
+</html>

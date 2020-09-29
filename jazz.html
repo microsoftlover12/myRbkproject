@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jazz</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="main.css">
+ <script>
+ 	$(document).ready(function(){
+
+$("#show1").hide();
+$("#firstpara").hide();
+$("#aboutshow").hide();
+    $("#pilates").css({"font-size": "170px","text-shadow": "2px 2px 5px #ffd194","text-align":"left","font-family": "serif","color": "Dark yellow4"});
+    $("#hiphop").css({"width":"750px"});
+    $("#rap").css({"width":"750px","height":"500px"});
+    $("#shownow").css({"color":"#ffffff","font-size":"35px"});
+    $("#show1").css({"padding":"20px","border-radius":"15px","background-color":"#b993d6","width":"190","font-size":"20px"});
+    $("#aboutshow,#aboutshow2").css({"font-size":"45px"});
+    $("#Happy1,#Happy2").css({"color":"#d53369"});
+    $("#show2").css({"font-size":"20px","background-color":"#fe8c00"});
+    $("#show,#show3").css({"background-color":"#ff6b6b","font-size":"20px"});
+
+  
+   
+    
+});
+
+ 	function showFunc() {
+	
+
+	var arrayOfTopics=["music1","music2"];
+	var objectOfTopics={
+
+	
+	music1:"hip hop",
+	music2:"jazz",
+	
+}
+$("#show").click(function(){
+
+	document.getElementById('shownow').innerHTML = "there is more than "+objectOfTopics.music2+"   "+"which is"+" "+objectOfTopics["music1"];
+	$("#firstpara").show();
+$("#show1").show();
+$("#aboutshow").show();
+})
+
+}
+$(document).ready(function(){
+
+$("#show1").hide();
+$("#firstpara").hide();
+$("#aboutshow").hide();
+    $("#pilates").css({"font-size": "170px","text-shadow": "2px 2px 5px #ffd194","text-align":"left","font-family": "serif","color": "Dark yellow4"});
+    $("#hiphop").css({"width":"750px"});
+    $("#rap").css({"width":"750px","height":"500px"});
+    $("#shownow").css({"color":"#ffffff","font-size":"35px"});
+    $("#show1").css({"padding":"20px","border-radius":"15px","background-color":"#b993d6","width":"190","font-size":"20px"});
+    $("#aboutshow,#aboutshow2").css({"font-size":"45px"});
+    $("#Happy1,#Happy2").css({"color":"#d53369"});
+    $("#show2").css({"font-size":"20px"});
+    $("#show,#show3").css({"background-color":"#a83279","font-size":"20px"});
+  
+   
+    
+});
+
+function show2Func(){
+ document.location.href='https://www.youtube.com/user/jazznbluesexperience';
+}
+
+function show1Func(){
+
+	window.open("hip.html");
+}
+</script>
+</head>
+<body>
+
+<div class="pilatesfirst">
+<h1 id="pilates">Jazz</h1>
+<p id="quote" style="font-size: 30px">“If Music is a Place -- then Jazz is the City, Folk is the Wilderness, Rock is the Road, Classical is a Temple.”
+― Vera Nazarian</p>
+<hr>
+</div>
+<div>
+<center><img id="hiphop" src="./src/jazz.jpg"></center>
+</div>	
+<hr>
+<div>
+	<center><button id="show" onclick="showFunc()">show me more</button></center>
+</div>
+<div id="showhere1">
+	<center><h1 id="firstpara">Jazz and Blues Experience</h1></center>
+	<center><p id="aboutshow">About Youtuber Welcome to<span id="Happy1"> Jazz and Blues Experience</span>,About Youtuber JazznBlues Experience is your channel for all the best jazz and blues music! Find your favorite songs and artists and experience the best of jazz music and blues music.
+	Frequency 2 videos / week
+	Since Nov 2011
+	Since Jan 2013</p></center>
+	<center><button id="show2" onclick="show2Func()">go to Jazz and Blues Experience</center>
+	<center><p id="shownow"></p></center>
+		
+	
+	<center><button id="show1" onclick="show1Func()">click me && go there</button></center>
+</div>
+<hr>
+
+
+
+
+
+</body>
+</html>
